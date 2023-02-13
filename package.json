@@ -1,18 +1,41 @@
 {
+  "homepage": "http://BogdanGlazko.github.io/SocialNetwork-reactSPA",
   "name": "my-social-network-2022",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.8.0",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/material": "^5.10.5",
+    "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.0.3",
+    "@types/node": "^18.7.21",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "antd": "^4.24.1",
+    "axios": "^0.27.2",
     "react": "^18.2.0",
+    "react-animated-css": "^1.2.1",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.35.0",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^6.4.0",
     "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
+    "redux": "^4.2.0",
+    "test": "^3.2.1",
+    "typescript": "^4.8.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -34,5 +57,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-redux": "^7.1.24",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-plugin-react": "^7.32.1",
+    "gh-pages": "^5.0.0",
+    "react-test-renderer": "^18.2.0"
   }
 }
