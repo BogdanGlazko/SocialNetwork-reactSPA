@@ -1,4 +1,4 @@
-import axios, {AxiosResponse} from "axios"
+import {AxiosResponse} from "axios"
 import {ResultCode} from "enum/AppEnums";
 import {
     IFollowUser, IUnfollowUser,
@@ -33,12 +33,12 @@ export const UsersRequestAxios = {
         })
     },
     followUser(userId: number) {
-        return apiInstance.post("/follow/${userId}").then((response:AxiosResponse<IFollowUser>) => {
+        return apiInstance.post("/follow/"+userId).then((response:AxiosResponse<IFollowUser>) => {
             return response.data.resultCode === ResultCode.success ? userId : null
         })
     },
     unFollowUser(userId: number) {
-        return apiInstance.delete("/follow/${userId}").then((response:AxiosResponse<IUnfollowUser>) => {
+        return apiInstance.delete("/follow/+"userId).then((response:AxiosResponse<IUnfollowUser>) => {
             console.log(response)
             return response.data.resultCode === ResultCode.success ? userId : null
         })
